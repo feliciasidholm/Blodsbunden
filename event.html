@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cpa3cdo.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Blodsbunden</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+        
+            <ul>
+                <li> <a class="link" href="index.html"> Startsida </a> </li>
+                <li> <a class="link" href="om.html"> Om filmen</a></li>
+                <li> <a class="link" href="biljetter.html"> Biljetter </a></li>
+                <li> <a class="link" href="event.html"> Event </a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="event"> <!--Titel + brödtext -->
+            <h2 id="title2"> Förhandsvisning vid Norra herrgården </h2>
+
+            <p> För att få maximal upplevelse och rätt stämning har vi 
+                tillsammans med Norra Herrgården ordnat en spökvandring i mindre 
+                grupper. Kvällen börjar med vandring runt slottet som består 
+                av skrämmande händelser och övernaturliga upplevelser, med 
+                andra ord inget för den lättskrämda. </p>
+                
+            <p> Efter rundvandringen samlas alla vid Norra Herrgårdens bakgård, 
+                framför en stor bioduk. Det kommer finnas filtar och sittplatser 
+                för alla gäster. Där visas premiären av “Blodsbunden”. </p>
+                    
+            <p> Det bjuds på tilltugg och alkoholfri dryck under rundvandringen 
+                och under biovisningen bjuds det på popcorn.</p>
+                    
+            <p> Spendera en härlig sommarkväll på våran utebio med stjärnorna 
+                som tak.  </p>
+        </div>
+       
+        <img class="utebio" src="utebio.png" alt="eventbild" >
+       
+        <ul class="info2">  <!--Information om eventet -->
+            <li id="rubrik2">  Information </li>
+
+                <li>Datum: 20 Juni 2024</li>
+                <li> Tid: 17:00 - 23:00</li>
+                <li>Plats: Norra Herrgården</li>
+            
+            <li id="rubrik3"> Pris</li>
+
+                <li>Ordinarie(över 16år): 130kr</li>
+                <li>Student: 90kr</li>
+                <li>Pensionär 90kr</li>
+                
+        </ul>
+
+        <main> 
+            <form action="confermation.html">  <!-- Länk som tar en till bekräftelse sidan vid klickning av skicka knappen-->
+                
+                
+                <li id="rubrik4"> Anmäl dig här: </li>
+                <li><label for="namn">Namn:</label></li> <!-- Text ovanför formulärets skrivrutan -->
+                    <li>
+                        <input type="text" id="namn" name="namn" placeholder="Fullständiga namn" required> <!-- Skrivrutan med text inuti -->
+                    </li>
+                <li><label for="telefonnummer">Telefonnummer:</label></li> <!-- Text ovanför formulärets skrivrutan -->
+                    <li>
+                        <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer" required> <!-- Skrivrutan med text inuti -->
+                    </li>
+                <li> <label for="email">E-mail:</label> </li><!-- Text ovanför formulärets skrivrutan -->
+                    
+                    <li>  
+                    <input type="email" id="email" name="email" placeholder="Mailadress" required> <!-- Skrivrutan med text inuti -->
+                    </li>
+
+                <li><button type="submit">Skicka</button></li> <!-- skicka knapp -->
+            
+        </form>
+        
+        </main>
+        <footer>
+            <a class="link" href="credits.html"> Credits </a>
+        </footer>
+    </div>
+</body>
+</html>

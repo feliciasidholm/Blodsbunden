@@ -1,0 +1,376 @@
+
+/* ALLMÄNT */
+
+body {
+    background-color: #540B0E; /* Gör så att färgen går ut hela vägen i kanterna */
+}
+
+.container {
+    display: grid;
+    width: 1400px;
+    grid-template-rows: 50px auto auto auto 50px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    background-size: cover;
+    margin: auto;
+    
+}
+nav { 
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    text-align: center;
+    background-color: black;
+}
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.link { /*Texten i navigeringsraden */
+    grid-column: 2 / 4 ;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px;
+
+    font-family: "sinete", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.link:hover { /*Ändrar färg på texten i navigeringsraden*/ 
+    color: #9e2a2b;
+}
+
+footer {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: antiquewhite;
+
+    font-family: "sinete", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+}
+
+/* NEDRÄKNING */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+        background-image:url("startsida.png");
+        background-attachment:fixed ;
+        background-position: 50% 75%;
+        background-repeat: no-repeat;
+        background-color: #540B0E; 
+        overflow-y: scroll;    
+        font-size: 30px;
+    }    
+
+.box {
+    text-align: center;
+    margin:  20px;
+    color: white;
+}
+
+.start { /*Navigeringsmenyn för första sidan, för att den ska vara i nederkant*/
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+
+    font-family: "sinete", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+}
+
+/* OM SIDAN */
+.front { /*Bilden på om-sidan*/
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.about { /*Text kolumn 1*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    color:antiquewhite;
+    padding-right: 20px;
+}
+
+.about2 { /*Text kolumn 2*/
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    padding-left: 20px;
+    padding-top: 60px;
+}
+
+
+
+/* BILJETTER */ 
+
+#title {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+.biljetter { /*Kolumnen för alternativ för datum*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.day {
+    color: antiquewhite;
+    padding-bottom: 20px;
+    
+}
+
+.time { /*Styling för boxen*/
+    border: solid 1px;
+    color: antiquewhite;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.time:hover { /*Boxen ändrar färg*/
+    background-color: #FFF3B0;
+    cursor:pointer;
+    color: black;
+}
+
+#rubrik1 {
+    font-size: 18pt;
+    padding-bottom: 10px;
+    font-family: "sinete", sans-serif;
+}
+.info { /*informationstext om filmen*/
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    color: antiquewhite;
+    align-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 3px;
+    font-family: "bilo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+.poster { /*bild på damen*/
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    padding-left: 20px;
+}
+
+
+/* EVENT */
+
+#title2 { 
+    font-size: 20pt;
+    padding-top: 20px;
+    font-family: "sinete", sans-serif;
+}
+
+.event { /*Text om eventet*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding-bottom:20px;
+
+}
+
+.info2 { 
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: antiquewhite;
+    list-style-type: none;
+}
+
+.utebio { /*Bild*/
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    padding-bottom: 40px;
+}
+
+#rubrik2, #rubrik4 {
+    font-size: 18pt;
+    padding-bottom: 10px;
+    padding-top: 0;
+    color: antiquewhite;
+    font-family: "sinete", sans-serif;
+} 
+
+#rubrik3 {
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 10px;    
+    font-family: "sinete", sans-serif;
+}
+
+main { /*formuläret*/
+    grid-column: 3 / 4   ;
+    grid-row: 4 / 5 ;
+    justify-content: center;
+}
+
+
+
+/* TEXT */
+
+p, label { 
+    color: antiquewhite;
+    font-family: "bilo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2 {
+    color: antiquewhite;
+    font-family: "sinete", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25pt;
+    margin-top: 15px;
+}
+
+/* CREDITS */
+
+#bild1 {
+    grid-column: 2 /4;
+    grid-row: 2 / 3;
+    padding-top: 40px;
+    width: 800px;
+}
+.bild2 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    padding-top: 100px;
+
+}
+
+#bild3 {
+    grid-column: 3 / 3;
+    grid-row: 3 / 4;
+    
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/*Bekräftelse sidan*/
+
+.bekräftelse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #540B0E;
+    
+}
+
+.bekräftelse h1  {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bekräftelse p {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.button1 {
+    padding: 10px 20px;
+    background-color: black;
+    color: #540B0E;
+    border-radius: 5px; /* gör så att knappens kanter är runda*/
+    font-size: 16px;
+    position: absolute; 
+    top: 65%; /* Placera knappens avstånd från toppen av taket */
+    left: 50%; /* Placera knappens avstånd från vänster av väggen */
+}
+
+.button1:hover {
+    background-color: white;
+    color: #540B0E;
+}
+
+
+@media (max-width:1000px) { /*Responsiv design*/
+    
+    /* ALLMÄNT */
+    .container {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    nav {
+        width: 600px;
+    }
+    footer {
+        width: 600px;
+    }
+
+    /* NEDRÄKNING */
+
+    .countdown {
+        width: 600px;
+        height: 740px;
+    }
+
+    .start {
+        width: 600px;
+    }
+
+    /* OM SIDAN */
+    .front {
+        width: 400px;
+       }
+
+    .about, .about2 {
+        width: 400px;
+    }
+    
+    /* EVENT */
+
+    .event {
+        width: 400px;
+
+    }
+
+    #title2 {
+        width: 400px;  
+        padding-left: 30px;     
+    }
+
+    #bild1 {
+        width: 400px;
+    }
+}
